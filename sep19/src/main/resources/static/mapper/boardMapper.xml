@@ -17,4 +17,16 @@
 		WHERE bno = #{bno}
 	</select>
 	
+	<update id="delete" parameterType="Integer">
+		UPDATE board
+		SET bdel = 0
+		WHERE bno = #{bno}
+	</update>
+	
+	<update id="update" parameterType="Map">
+		UPDATE board
+		SET btitle = #{title}, bcontent = #{content}
+		WHERE bno = #{bno}
+	</update>
+	
 </mapper>

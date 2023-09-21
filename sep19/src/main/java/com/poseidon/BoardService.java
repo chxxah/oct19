@@ -26,6 +26,14 @@ public class BoardService {
 		public Map<String, Object> detail(int bno) {
 			return boardDAO.detail(bno);
 		}
+
+		public int delete(int bno) {
+			return boardDAO.delete(bno);
+		}
+
+		public int update(Map<String, Object> map) {
+			return boardDAO.update(map);
+		}
 		
 		
 	
