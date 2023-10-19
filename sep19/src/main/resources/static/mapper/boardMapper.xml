@@ -29,4 +29,10 @@
 		WHERE bno = #{bno}
 	</update>
 	
+	<select id="comment" parameterType="Integer" resultType="Map">
+		SELECT *
+		FROM commentsview
+		WHERE bno = #{bno}
+	</select>
+	
 </mapper>
